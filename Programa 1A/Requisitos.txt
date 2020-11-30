@@ -1,0 +1,25 @@
+* RF1 -  Ler números de competidores
+	* RNF1.1 - Sendo 1 o menor número permitido.
+	* RNF1.2 - Sendo  1000 o maior número permitido.
+	* RNF1.3 - primeiro valor lido.
+* RF2 - Ler quantidade minima de classificações
+	* RNF2.1 - 1 é o menor número permitido.
+	* RNF2.2 - O número maximo de classificações é o mesmo número de competidores.
+	* RNF2.3 - Segundo valor lido.
+* RF3 - Ler notas dos competidores
+	* RNF3.1 - As notas devem ser positivas
+* RF4 - Exibir número de competidores classificados
+	* RNF4.1 - Os classificados poessuem as maiores notas entre os competidores.
+	* RNF4.2 - Se houver empate das notas, ambos são classificados.
+	* RNF4.3 - Deve ser o primeiro valor a ser exibido.
+* RF5 - Exibir desvio padrão da pontuação dos classificados
+	* RNF5.1 - O desvio padrão deve ser calculado com base na média aritmética.
+	* RNF5.2 - Deve ser o segundo valor a ser exibido.
+* RF6 - Exibir média aritmética da pontuação dos classificados
+* RF7 - Exibir desvio padrão de todos os competidores
+	* RNF7.1 - O desvio padrão deve ser calculado com base na média aritmética
+	* RNF7.2 - Incluíndo os classifcados.
+	RNF7.4 - Deve  ser o terceiro valor a ser exibido.
+* RF8 - Exibir média aritmética de todos os competidores
+	* RNF8.1 - Incluindo dos classificados.
+	* RNF8.2 - Deve ser o último valor a ser exibido.

@@ -1,0 +1,3 @@
+Obter resultado - RF1, RF2, RF3, RF4 
+Obter média - RF6, RF8
+Obter desvio padrão - RF5, RF7

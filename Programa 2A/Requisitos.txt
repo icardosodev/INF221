@@ -1,0 +1,10 @@
+* RF1 -  Ler entrada
+	* RNF1.1 - primeira entrada número entre 3 e 5
+	* RNF1.2 - proximas são números entre 1 e 1000
+
+* RF2 - Descobrir o melhor andar para a maquina de café
+	* RNF2.1 - Se houver empate entre mais de um andar, ambos devem ser exibidos.
+	* RNF2.2 O melhor andar para ficar a maquina de café é a que os funcionarios castaram menos tempo se deslocando.
+
+* RF3 -  Exbir resposta
+	* RNF3.1 - primeiro deve ser exibido a quantidade de tempo total que os funcionários gastaram se locomovendo até a maquina de café. e depois o andar no qual ela deve ficar posicionada, se no caso do empate exibir os dois separados por 1 espaço.

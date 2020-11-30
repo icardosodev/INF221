@@ -1,0 +1,11 @@
+Regras:
+Serão contadas como linhas de código:
+1. Linhas com diretivas de compilação e linkagem (“includes”, “using” etc.);
+2. Linhas com declaração de variáveis e classes;
+3. Linhas com comandos executáveis: atribuições, testes condicionais (if-else), estruturas
+de seleção (switch-case), laços de repetição (while, for ect.), chamadas de função e de
+métodos de classe, operações lógicas ou aritméticas, entre outros comandos.
+Não serão contadas como linhas de código:
+1. Linhas em branco;
+2. Linhas contendo apenas comentários;
+3. Linhas que contenham apenas um símbolo ‘{‘ ou ‘}’.
