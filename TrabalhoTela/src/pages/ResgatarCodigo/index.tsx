@@ -1,12 +1,12 @@
-//import { useNavigation } from '@react-navigation/native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { useNavigation } from '@react-navigation/native';
 import React, { useEffect, useState } from 'react';
 import { Alert, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import TopBar from '../../components/TopBar';
 import styles from './styles';
 
 export default function ResgatarCodigo() {
-  //const navigation = useNavigation();
+  const navigation = useNavigation();
   const [input, setInput] = useState('');
   const [codes, setCodes] = useState([
     { code: '12345', points: '100', validated: false },
@@ -58,7 +58,7 @@ export default function ResgatarCodigo() {
 
   return (
     <View style={styles.container}>
-      <TopBar />
+      <TopBar menuType="Cliente" />
       <View style={styles.inputGroup}>
         <View>
           <Text style={styles.inputGroupText}>Código de pontos:</Text>
@@ -73,7 +73,7 @@ export default function ResgatarCodigo() {
         </View>
       </View>
       <View style={styles.backButtonContainer}>
-        <TouchableOpacity style={styles.button} /*onPress={() => navigation.goBack()}*/>
+        <TouchableOpacity style={styles.button} onPress={() => navigation.goBack()}>
           <Text style={styles.buttonText}>Voltar</Text>
         </TouchableOpacity>
       </View>

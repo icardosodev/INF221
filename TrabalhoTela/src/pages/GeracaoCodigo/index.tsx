@@ -1,5 +1,5 @@
-//import { useNavigation } from '@react-navigation/native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { useNavigation } from '@react-navigation/native';
 import React, { useEffect, useState } from 'react';
 import { Clipboard, Text, TextInput, ToastAndroid, TouchableOpacity, View } from 'react-native';
 import TopBar from '../../components/TopBar';
@@ -8,7 +8,7 @@ import styles from './styles';
 
 
 export default function GeracaoCodigo() {
-  //const navigation = useNavigation();
+  const navigation = useNavigation();
   const [codes, setCodes] = useState([
     { code: '12345', points: '100', validated: false },
     { code: '54321', points: '50', validated: true },]);
@@ -71,7 +71,7 @@ export default function GeracaoCodigo() {
 
   return (
     <View style={styles.container}>
-      <TopBar />
+      <TopBar menuType="Empresa" />
       <View style={styles.formContainer}>
         <View style={styles.formGroup}>
           <Text style={styles.formText}>Quantidade de pontos:</Text>
@@ -118,7 +118,7 @@ export default function GeracaoCodigo() {
         </View>
       </View>
       <View style={styles.backButtonContainer}>
-        <TouchableOpacity style={styles.codigoButton} /*onPress={() => navigation.goBack()}*/>
+        <TouchableOpacity style={styles.codigoButton} onPress={() => navigation.goBack()}>
           <Text style={styles.codigoButtonText}>
             Voltar
           </Text>
