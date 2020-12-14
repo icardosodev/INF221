@@ -1,7 +1,7 @@
 //import { useNavigation } from '@react-navigation/native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import React, { useEffect, useState } from 'react';
-import { Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { Alert, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import TopBar from '../../components/TopBar';
 import styles from './styles';
 
@@ -39,20 +39,19 @@ export default function ResgatarCodigo() {
 
     if (input === '') return
 
-    var data = codes.filter(element => { return element.code == input });
-    if (data.length === 0) alert("O código é inválido");
-    else if (data[0].validated === true) alert("O código já foi validado");
+    let data = codes.filter(element => element.code == input);
+    if (data.length === 0) Alert.alert('Código inválido', 'O código é invalido.');
+    else if (data[0].validated === true) Alert.alert('Código inválido', 'O código já foi validado.');
     else {
       //const aux = codes;
-      for (var i = 0; i < codes.length; i = i + 1) {
+      for (let i = 0; i < codes.length; i = i + 1) {
         if (codes[i].code == input) {
           codes[i].validated = true;
           break;
         }
       }
       //setCodes(aux);
-
-      alert(`Você recuperou ${data[0].points} pontos!!!`);
+      Alert.alert('Parabéns', `Você recuperou ${data[0].points} pontos!!!`);
     }
 
   }
