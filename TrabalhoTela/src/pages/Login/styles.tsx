@@ -4,7 +4,6 @@ import { StyleSheet } from 'react-native';
 export default StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#00B7F1',
     paddingTop: Constants.statusBarHeight + 20,
   },
   textSt: {

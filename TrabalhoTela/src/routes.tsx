@@ -1,12 +1,8 @@
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import { createAppContainer } from 'react-navigation'
+import { createAppContainer } from 'react-navigation';
 import { createDrawerNavigator } from 'react-navigation-drawer';
-import React from 'react';
-import Login from './pages/Login';
 import GeracaoCodigo from './pages/GeracaoCodigo';
+import Login from './pages/Login';
 import ResgatarCodigo from './pages/ResgatarCodigo';
-import TopBar from './components/TopBar';
 
 // const AppStack = createStackNavigator();
 
@@ -25,6 +21,9 @@ import TopBar from './components/TopBar';
 // }
 
 const clientDrawerNavigator = createDrawerNavigator({
+  'Home': {
+    screen: Login
+  },
   'Gerar código de pontos': {
     screen: GeracaoCodigo
   },
