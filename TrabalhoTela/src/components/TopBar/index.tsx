@@ -5,11 +5,12 @@ import styles from './styles';
 
 
 export default function TopBar() {
+
   return (
     <View style={styles.container}>
       <View style={styles.buttonContainer}>
         <TouchableOpacity>
-          <MaterialIcons name='menu' size={32} color='#FFF' />
+          <MaterialIcons name='menu' size={32} color='#FFF'/>
         </TouchableOpacity>
       </View>
     </View>

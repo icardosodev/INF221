@@ -7,8 +7,9 @@ export default StyleSheet.create({
     paddingTop: Constants.statusBarHeight + 10,
   },
   inputGroup: {
-    marginTop: 40,
-    marginLeft: 24,
+    marginTop: 50,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   inputGroupText: {
     fontSize: 20,
@@ -39,6 +40,6 @@ export default StyleSheet.create({
   },
   backButtonContainer: {
     marginTop: 391,
-    marginLeft: 23,
+    marginLeft: 30,
   },
 })

@@ -7,8 +7,9 @@ export default StyleSheet.create({
     paddingTop: Constants.statusBarHeight + 10,
   },
   formContainer: {
-    marginTop: 40,
-    marginLeft: 24,
+    marginTop: 50,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   formText: {
     fontSize: 20,
@@ -25,7 +26,7 @@ export default StyleSheet.create({
   },
   formButtonContainer: {
     width: '100%',
-    marginLeft: 225,
+    marginLeft: 320,
   },
   formButton: {
     backgroundColor: '#00B7F1',
@@ -49,7 +50,8 @@ export default StyleSheet.create({
   codigoGroupText: {
     fontSize: 18,
     fontWeight: 'bold',
-    marginLeft: 102,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   codigoContainer: {
     width: 314,
@@ -68,17 +70,17 @@ export default StyleSheet.create({
   },
   codigoText: {
     fontSize: 18,
-    fontWeight: 'bold',
-    color: '#555',
+    fontStyle: 'italic',
+    color: '#262626',
   },
   codigoButtonsGroup: {
     marginTop: 10,
     flexDirection: 'row',
     width: '100%',
-    marginLeft: 220,
+    marginLeft: 280,
   },
   codigoButtonContainer: {
-    marginLeft: 14,
+    marginLeft: 10,
   },
   codigoButton: {
     backgroundColor: '#00B7F1',
@@ -95,5 +97,6 @@ export default StyleSheet.create({
   },
   backButtonContainer: {
     marginTop: 150,
+    marginLeft: 30,
   }
 });
